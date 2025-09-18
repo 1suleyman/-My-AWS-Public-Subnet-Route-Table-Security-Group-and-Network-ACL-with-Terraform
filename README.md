@@ -32,10 +32,8 @@ terraform-public-subnet/
 
 You can view the **Terraform files here**:
 
-* [main.tf](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/main.tf)
-* [variables.tf](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/variables.tf)
-* [outputs.tf](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/outputs.tf)
-* [terraform.tfvars](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/terraform.tfvars)
+* [main.tf](https://github.com/1suleyman/-My-AWS-Public-Subnet-Route-Table-Security-Group-and-Network-ACL-with-Terraform/blob/main/terraform-public-subnet/main.tf)
+* [variables.tf](https://github.com/1suleyman/-My-AWS-Public-Subnet-Route-Table-Security-Group-and-Network-ACL-with-Terraform/blob/main/terraform-public-subnet/variable.tf)
 
 ---
 
@@ -46,7 +44,7 @@ You can view the **Terraform files here**:
 I set up the AWS provider by editing the provider block in `main.tf`.
 This tells Terraform which AWS account and region to use.
 
-[View main.tf provider section](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/main.tf)
+[View main.tf provider section](https://github.com/1suleyman/-My-AWS-Public-Subnet-Route-Table-Security-Group-and-Network-ACL-with-Terraform/blob/main/terraform-public-subnet/main.tf)
 
 ---
 
@@ -54,7 +52,7 @@ This tells Terraform which AWS account and region to use.
 
 I created a route table and associated it with my Public 1 subnet to control traffic flow.
 
-[View route table section](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/main.tf#L7)
+[View route table section](https://github.com/1suleyman/-My-AWS-Public-Subnet-Route-Table-Security-Group-and-Network-ACL-with-Terraform/blob/main/terraform-public-subnet/main.tf)
 
 💡 **Tip:** Route tables direct traffic **inside and outside** the VPC.
 
@@ -64,7 +62,7 @@ I created a route table and associated it with my Public 1 subnet to control tra
 
 I created a security group for my EC2 instances in the VPC, allowing HTTP inbound traffic and all outbound traffic.
 
-[View security group section](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/main.tf#L19)
+[View security group section](https://github.com/1suleyman/-My-AWS-Public-Subnet-Route-Table-Security-Group-and-Network-ACL-with-Terraform/blob/main/terraform-public-subnet/main.tf)
 
 💡 **Tip:** Security groups provide **resource-level protection**.
 
@@ -74,7 +72,7 @@ I created a security group for my EC2 instances in the VPC, allowing HTTP inboun
 
 I added a network ACL to provide an additional layer of security at the subnet level.
 
-[View network ACL section](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/blob/main/main.tf#L40)
+[View network ACL section](https://github.com/1suleyman/-My-AWS-Public-Subnet-Route-Table-Security-Group-and-Network-ACL-with-Terraform/blob/main/terraform-public-subnet/main.tf)
 
 💡 **Tip:** ACLs act at the **subnet level**, while security groups act at the **resource level**.
 
