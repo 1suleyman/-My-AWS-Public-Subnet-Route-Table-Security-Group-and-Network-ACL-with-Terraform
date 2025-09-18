@@ -10,6 +10,8 @@ This project is a Terraform-powered version of my hands-on [AWS Public Subnet, R
 
 ## 📋 Project Overview
 
+<img width="1485" height="812" alt="image" src="https://github.com/user-attachments/assets/ef668035-a81f-45da-bc61-1a3f9f5dba99" />
+
 **Terraform Goal:**
 Use Terraform to create a public subnet, configure traffic flow with a route table, secure EC2 instances with a security group, and add subnet-level protections using a network ACL.
 
