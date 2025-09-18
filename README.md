@@ -2,8 +2,9 @@
 
 I decided to fully automate my AWS networking setup using Terraform. This project provisions a **public subnet**, **route table**, **security group**, and **network ACL** — all declaratively. 🖥️☁️
 
+This project is a Terraform-powered version of my hands-on [AWS Public Subnet, Route Table, Security Group, and Network ACL Hands-On Lab](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/tree/main), fully codified for repeatable deployments.
+
 **Part 2 in my networking series**
-Here is the [AWS Console version](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/tree/main)
 
 ---
 
