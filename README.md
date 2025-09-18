@@ -9,8 +9,6 @@ Here is the [AWS Console version](https://github.com/1suleyman/-AWS-public-subne
 
 ## 📋 Project Overview
 
-<img width="1485" height="812" alt="image" src="https://github.com/user-attachments/assets/bfe1bf4f-7059-4728-8624-850c0352c063" />
-
 **Terraform Goal:**
 Use Terraform to create a public subnet, configure traffic flow with a route table, secure EC2 instances with a security group, and add subnet-level protections using a network ACL.
 
