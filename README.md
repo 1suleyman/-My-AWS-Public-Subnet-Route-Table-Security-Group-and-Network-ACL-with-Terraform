@@ -5,6 +5,8 @@ I decided to fully automate my AWS networking setup using Terraform. This projec
 **Part 2 in my networking series**
 Here is the [AWS Console version](https://github.com/1suleyman/-AWS-public-subnet-route-table-security-group-and-network-ACL-Hands-On-Lab/tree/main)
 
+<img width="1485" height="812" alt="image" src="https://github.com/user-attachments/assets/8558ae0f-fce1-49b8-a7eb-f3ba1ab19dca" />
+
 ---
 
 ## 📋 Project Overview
