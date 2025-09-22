@@ -46,6 +46,7 @@ resource "aws_route_table_association" "public_subnet_assoc" {
   route_table_id = aws_route_table.networking_part2.id
 }
 
+
 # 6. Create a Security Group and rules
 
 resource "aws_security_group" "networking_part2_sg" {
@@ -57,6 +58,14 @@ resource "aws_security_group" "networking_part2_sg" {
     description = "HTTP from anywhere"
     from_port   = 80
     to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["${var.internet_cidr_block}"]
+  }
+
+  ingress {
+    description = "SSH from anywhere for EC2 Instance Connect"
+    from_port   = 22
+    to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["${var.internet_cidr_block}"]
   }
